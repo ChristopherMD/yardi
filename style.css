@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+.btn-rollover:hover {
+  background-color: orangered;
+}
+
+/* HEADER */
+header {
+  margin: 0 auto;
+  width: 100%;
+}
+@media only screen and (max-width: 310px) {
+  .img-sm-nav {
+    width: 30%;
+    height: auto;
+  }
+}
+
+/* SECTION ONE - CAROUSEL - CARDS */
+.sect-one {
+  min-height: 1185px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/img/IMG_5908_09_10_11_12_13_14.jpg);
+  background-repeat: no-repeat;
+  background-size: 170%;
+  background-position-x: 39%;
+  background-position-y: 8%;
+  overflow: hidden;
+  object-fit: cover;
+  display: grid;
+  grid-template-rows: 395px 395px 1fr;
+  grid-template-columns: 1fr;
+}
+.brick-logo {
+  width: 100px;
+  margin-top: 15em;
+}
+.cardbody .btn,
+.vcl-btn {
+  border: 1px solid white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 0.8em;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.075em;
+}
+.card-one {
+  position: absolute;
+  background-color: black;
+  height: 100%;
+  opacity: 0.5;
+}
+/* SECTION ONE MEDIA QUERIES */
+@media only screen and (max-width: 1045px) {
+  .sect-one {
+    background-size: cover;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .brick-logo {
+    width: 180px;
+  }
+  .sect-one {
+    padding-top: 4em;
+  }
+  .carousel {
+    padding-top: 6em;
+  }
+}
+
+/* SECION TWO -  */
+.sect-two-pad {
+  padding: 0 1em;
+}
+/* SECTION TWO MEDIA QUERIES */
+@media only screen and (min-width: 1400px) {
+  .sect-two-pad {
+    padding: 0 7em;
+  }
+}
+
+/* SECTION THREE */
+.sect-three {
+  object-fit: cover;
+  overflow: hidden;
+  background-image: url(img/VibrantCommunity-Bg.png);
+}
+.vcl-image-box {
+  width: 580px;
+  height: 300px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+.vcl-image-box-one {
+  background-image: url(/img/breakfast-brunch-cell-phone-693269a.jpg);
+  background-position: center;
+  background-size: 150%;
+}
+.vcl-image-box-two {
+  background-image: url(/img/AdobeStock_333387457a.jpg);
+  background-position: top left;
+  background-size: 120%;
+}
+.vcl-image-box-three {
+  background-image: url(/img/pexels-mentatdgt-1485799a.jpg);
+  background-position: bottom center;
+  background-size: 159%;
+}
+.vcl-image-box-four {
+  background-image: url(/img/AdobeStock_180495371a.jpg);
+  background-position-x: 35%;
+  background-position-y: 85%;
+  background-size: 260%;
+}
+/* SECTION THREE MEDIA QUERIES */
+@media only screen and (min-width: 1400px) {
+  .sect-three-pad {
+    padding: 0 9.5em;
+  }
+}
+
+/* SECTION FOUR */
+.sect-four {
+  object-fit: cover;
+  overflow: hidden;
+  background-image: url(img/AdobeStock_196314124.jpg);
+  background-repeat: no-repeat;
+  background-position: 54% 19%;
+  background-size: 125%;
+}
+card-body {
+  width: 418px;
+  height: 355px;
+}
+.brd {
+  border: none;
+}
+.brd-md-left-no {
+  border-left: none;
+}
+.sect-four-btn {
+  background-color: black;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 0.8em;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.075em;
+  padding: 1.2em 3.5em;
+  margin-bottom: 2.8em;
+}
+/* SECTIoN FOUR MEDIA QUERIES */
+@media only screen and (min-width: 1200px) {
+  .bdr-xl-bottom {
+    border-bottom: 1px solid #999999;
+    border-radius: 0%;
+  }
+  .bdr-xl-left {
+    border-left: 1px solid #999999;
+    border-radius: 0%;
+  }
+  .bdr-xl-right {
+    border-right: 1px solid #999999;
+    border-radius: 0%;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .bdr-md-bottom {
+    border-bottom: 1px solid #999999;
+    border-radius: 0%;
+  }
+  .bdr-md-left {
+    border-left: 1px solid #999999;
+    border-radius: 0%;
+  }
+  .bdr--md-right {
+    border-right: 1px solid #999999;
+    border-radius: 0%;
+  }
+  .bdr-md-bottom {
+    border-bottom: 1px solid #999999;
+    border-radius: 0%;
+  }
+  .brd-md-left-no {
+    border-left: none;
+  }
+  .brd-md-right-no {
+    border-left: none;
+  }
+  .brd-md-top-no {
+    border-left: none;
+  }
+  .brd-md-bottom-no {
+    border-left: none;
+  }
+}
+@media only screen and (max-width: 1550px) {
+  .sect-four {
+    background-size: cover;
+  }
+}
+
+/* SECTION FIVE */
+.gal-long {
+  width: 100%;
+  height: 590px;
+}
+.gal-short {
+  width: 100%;
+  height: 360px;
+}
+.img-cover-hidden {
+  object-fit: cover;
+  overflow: hidden;
+}
+.sect-five-btn {
+  background-color: orangered;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 0.8em;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.075em;
+  padding: 1.14em 4em;
+  margin-bottom: 2.8em;
+}
+
+/* SECTION SIX */
+.sect-six {
+  background-color: #0091b3;
+  padding: 1.9em 0;
+}
+.sect-six div h3 a {
+  background-color: #33a7c2;
+}
+
+/* FOOTER */
+.chancellor-icon {
+  width: 184px;
+  object-fit: fill;
+}
+.social-media-icons {
+  width: 25px;
+  height: 25px;
+}

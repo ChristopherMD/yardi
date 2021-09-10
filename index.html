@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap');
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Yardi Test Site By Christopher Doud</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-dark fixed-top ps-sm-3"
+        style="background-color: #2d4b6b; height: 80px;"
+      >
+        <div class="container px-xl-5">
+          <a class="navbar-brand ps-xl-4 img-sm-nav" href="#">
+            <img
+              src="/img/Logo-Chancellor.png"
+              alt="Chancellor Properties Logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span
+              ><img
+                style="width: 50px; height: 40px;"
+                class="img-sm-nav"
+                src="/icons/hamburgericon.png"
+                alt="menu hamburger icon"
+            /></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            style="background-color: #2d4b6b;"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">
+                Chancellor Properties
+              </h5>
+              <button
+                type="button"
+                class="btn btn-outline-light text-white p-1"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                X
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Amenities</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Virtual Tours</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Floorplans</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Photo Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Maps & Directions</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">eBrochure</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Schedule a Tour</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container-fluid">
+      <section class="row sect-one">
+        <div class="text-white">
+          <div class="row justify-content-center text-center">
+            <img
+              class="brick-logo pb-4"
+              src="/img/logoBrick.gif"
+              alt="Chancellor Logo"
+            />
+            <p class="display-6 fw-lighter">
+              Luxury Apartment Residences + Shops
+            </p>
+          </div>
+        </div>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1 of 3 says Live in Rhythm"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2 of 3 says Boot Strap 5 and C S S Grid"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3 of 3 says Hire Me. I am worthy"
+            ></button>
+          </div>
+          <div
+            class="carousel-inner justify-content-center text-white text-center"
+          >
+            <div class="carousel-item active">
+              <h1 class="display-1 carousel-headline">Live in the Rhythm</h1>
+            </div>
+            <div class="carousel-item">
+              <h1 class="display-1 carousel-headline">Bootstrap5 + CSS Grid</h1>
+            </div>
+            <div class="carousel-item">
+              <h1 class="display-1 carousel-headline">
+                Hire Me :D
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row align-content-lg-end text-white m-0 p-lg-0 px-md-4">
+          <div class="col-lg-4 col-sm-12 m-0 p-md-0">
+            <div
+              class="bg-black bg-opacity-50 card border-white border-top-0 border-bottom-0"
+            >
+              <div class="cardbody text-center py-5 px-lg-5">
+                <img src="/icons/House-icon.png" alt="house icon" />
+                <h4 class="card-title fw-light my-3">Schedule a Tour</h4>
+                <p class="fs lead card-subtitle mb-1 px-2 px-lg-0">
+                  We will be scheduling virtual tours as well as in-person
+                  tours. Social distancing guidelines apply.
+                </p>
+                <a
+                  href="#"
+                  class="btn rounded-0 card-btn btn-rollover mt-3 text-white px-4 pt-3 pb-0"
+                  aria-label="This is a link to schedule a tour"
+                >
+                  <p>SCHEDULE TOUR</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 m-0 p-md-0">
+            <div
+              class="bg-black bg-opacity-50 card border-white border-top-0 border-bottom-0"
+            >
+              <div class="cardbody text-center py-5 px-lg-5">
+                <img src="/icons/Phone-icon.png" alt="phone icon" />
+                <h4 class="card-title fw-light my-3">(833) 238-6197</h4>
+                <p class="lead card-subtitle mb-1 px-2 px-lg-0">
+                  We cannot wait to help you find your new home! Please call for
+                  any additional questions.
+                </p>
+                <a
+                  href="#"
+                  class="btn rounded-0 card-btn btn-rollover mt-3 text-white px-4 pt-3 pb-0"
+                  aria-label="This is a link to schedule a tour"
+                >
+                  <p>GET IN TOUCH</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 m-0 p-md-0">
+            <div
+              class="bg-black bg-opacity-50 card border-white border-top-0 border-bottom-0"
+            >
+              <div class="cardbody text-center py-5 px-lg-5">
+                <img src="/icons/search.png" alt="search icon" />
+                <h4 class="card-title fw-light my-3">Find my Apartment</h4>
+                <p class="lead card-subtitle mb-1 px-2 px-lg-0">
+                  With a wide variety of floorplans, we are sure to have the
+                  right apartments to fit your lifestyle.
+                </p>
+                <a
+                  href="#"
+                  class="btn rounded-0 card-btn btn-rollover mt-3 text-white px-4 pt-3 pb-0"
+                  aria-label="This is a link to schedule a tour"
+                >
+                  <p>SEE FLOORPLANS</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="row sect-two py-5 px-md-5 text-center bg-white">
+        <div class="container-fluid py-md-5">
+          <div class="row sect-two-pad">
+            <h1
+              class="display-5 fw-normal mb-4 px-lg-5 mx-lg-5"
+              style="line-height: 1.5em;"
+            >
+              Chancellor Apartments is a mix of apartment homes and retail shops
+              located in the heart of the city
+            </h1>
+          </div>
+          <div class="row sect-two-pad">
+            <p class="sect-three-pad mt-4 text-black-50 fs-4">
+              Just across the street from the University of Santa Barbara, CA.
+              The community design provides a contemporary urban flare that
+              recognizes the art and music heritage throughout the city. Studio,
+              1, 2, and 3 bedroom apartment homes, along with an abundance of
+              amenities, make Chancellor Apartments an active destination of
+              many lifestyles, while also offering an escape to residents who
+              enjoy the comfort of home.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="row sect-three py-5 px-md-5 justify-content-center text-center text-white"
+      >
+        <div class="container-fluid py-md-5 px-md-5">
+          <div class="row mb-4">
+            <h1 class="display-5 fw-normal">Vibrant Community Life</h1>
+          </div>
+          <div class="row">
+            <p class="fs-4 mb-0 pb-0">
+              With exciting new opportunities for shopping, dining,
+              entertainment and outdoor amusement.
+            </p>
+            <p class="fs-4 mt-0 pt-0">
+              Get a piece of the luxury when you live at Highland Row
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div
+            class="col-sm-12 col-lg-6 d-flex align-items-center justify-content-center vcl-image-box vcl-image-box-one m-3"
+          >
+            <h3>Restaurant & Dining</h3>
+          </div>
+          <div
+            class="col-sm-12 col-lg-6 d-flex align-items-center justify-content-center vcl-image-box vcl-image-box-two m-3"
+          >
+            <h3>Shopping & Groceries</h3>
+          </div>
+          <div
+            class="col-sm-12 col-lg-6 d-flex align-items-center justify-content-center vcl-image-box vcl-image-box-three m-3"
+          >
+            <h3>University & Parks</h3>
+          </div>
+          <div
+            class="col-sm-12 col-lg-6 d-flex align-items-center justify-content-center vcl-image-box vcl-image-box-four m-3"
+          >
+            <h3>Close to Main Intersections</h3>
+          </div>
+        </div>
+        <div class="col-12 mt-5 px-0">
+          <a href="#" class="btn rounded-0 mt-3 text-white pt-3 pb-0"
+            ><p class="vcl-btn btn-rollover px-4 py-3">
+              EXPLORE NEIGHBORHOOD
+            </p></a
+          >
+        </div>
+      </section>
+      <section class="row sect-four text-black h-100">
+        <div class="container-fluid text-center my-5 w-75">
+          <div class="row">
+            <div class="col-12 mt-5">
+              <h1 class="display-5 fw-normal">
+                High-End from Start to the Finishes
+              </h1>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-8 fs-4 mt-3 mb-4 text-black-50">
+              <p class="fs-4">
+                Resort-quality amenities that are perfect for entertaining,
+                relaxing, or socializing, you'll never want to leave the
+                comforts of home.
+              </p>
+            </div>
+          </div>
+          <div
+            class="row align-items-end bg-white bg-opacity-75 py-3 px-3 mx-md-5"
+          >
+            <div
+              class="card col-md-12 col-lg-6 bg-transparent col-xl-4 brd bdr-xl-bottom bdr-md-bottom brd-md-top"
+            >
+              <div class="card-body">
+                <img
+                  class="mt-5"
+                  src="/icons/pool-icon.png"
+                  alt="swimming pool icon"
+                />
+                <h5 class="text-black mt-5 pb-3">Pool with Aqua Lounge</h5>
+                <p class="text-black-50 pb-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                  assumenda odio vel corrupti, sapiente nam quod enim deserunt
+                  repudiandae, iure repellat molestiae.
+                </p>
+              </div>
+            </div>
+            <div
+              class="card col-md-12 col-lg-6 col-xl-4 bg-transparent brd bdr-xl-bottom bdr-xl-left bdr-xl-right bdr-md-bottom"
+            >
+              <div class="card-body">
+                <img
+                  class="mt-5"
+                  src="/icons/fitness-icon.png"
+                  alt="exercise bike icon"
+                />
+                <h5 class="text-black mt-5 pb-3">24-Hour Fitness Center</h5>
+                <p class="text-black-50 pb-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                  assumenda odio vel corrupti, sapiente nam quod enim deserunt
+                  repudiandae, iure repellat molestiae.
+                </p>
+              </div>
+            </div>
+            <div
+              class="card card-border col-md-12 col-lg-6 col-xl-4 bg-transparent brd bdr-xl-bottom bdr-md-bottom"
+            >
+              <div class="card-body">
+                <img
+                  class="mt-5"
+                  src="/icons/bike-icon.png"
+                  alt="bicycle icon"
+                />
+                <h5 class="text-black mt-5 pb-3">Interior Bike Storage</h5>
+                <p class="text-black-50 pb-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                  assumenda odio vel corrupti, sapiente nam quod enim deserunt
+                  repudiandae, iure repellat molestiae.
+                </p>
+              </div>
+            </div>
+            <div
+              class="card card-border col-md-12 col-lg-6 col-xl-4 bg-transparent brd bdr-md-bottom"
+            >
+              <div class="card-body">
+                <img
+                  class="mt-5"
+                  src="/icons/pet-icon.png"
+                  alt="paw print icon"
+                />
+                <h5 class="text-black mt-5 pb-3">Pet Friendly</h5>
+                <p class="text-black-50 pb-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                  assumenda odio vel corrupti, sapiente nam quod enim deserunt
+                  repudiandae, iure repellat molestiae.
+                </p>
+              </div>
+            </div>
+            <div
+              class="card card-border col-md-12 col-lg-6 col-xl-4 bg-transparent brd bdr-xl-left bdr-xl-right bdr-md-bottom"
+            >
+              <div class="card-body">
+                <img
+                  class="mt-5"
+                  src="/icons/chair-icon.png"
+                  alt="chair icon"
+                />
+                <h5 class="text-black mt-5 pb-3">Open Concept Floorplan</h5>
+                <p class="text-black-50 pb-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                  assumenda odio vel corrupti, sapiente nam quod enim deserunt
+                  repudiandae, iure repellat molestiae.
+                </p>
+              </div>
+            </div>
+            <div
+              class="card card-border col-md-12 col-lg-6 col-xl-4 bg-transparent border-0 bdr-md-bottom"
+            >
+              <div class="card-body">
+                <img
+                  class="mt-5"
+                  src="/icons/eco-icon.png"
+                  alt="eco friendly house icon"
+                />
+                <h5 class="text-black mt-5 pb-3">Stainless Steel Appliances</h5>
+                <p class="text-black-50 pb-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                  assumenda odio vel corrupti, sapiente nam quod enim deserunt
+                  repudiandae, iure repellat molestiae.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mt-5 px-0">
+            <a href="#" class="btn rounded-0 mt-3 text-white pt-3 pb-0">
+              <p class="sect-four-btn btn-rollover">
+                EXPLORE AMENITIES
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="row sect-five text-black">
+        <div class="container-fluid text-center my-5 w-100">
+          <div class="row">
+            <div class="col-12 mt-5">
+              <h1 class="display-5 fw-normal">Photo Gallery</h1>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-6 fs-5 px-lg-5 my-4 text-black-50">
+              <p>
+                Take a look at photo collections that capture the unique and
+                beautiful spaces in our community and apartments as well as
+                videos that offer even more detail.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-lg-6 col-xl-3">
+              <div class="row mt-4">
+                <img
+                  src="/img/IMG_5957_58_59_60_61_62_63.jpg"
+                  class="gal-long img-cover-hidden"
+                  alt="poolside shot looking at the cack of the apartments"
+                />
+              </div>
+              <div class="row mt-4">
+                <img
+                  src="/img/IMG_1441_2_3_4_5_6_7-2.jpg"
+                  class="gal-short img-cover-hidden"
+                  alt="apartment living room with couch"
+                />
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6 col-xl-3">
+              <div class="row mt-4">
+                <img
+                  src="/img/IMG_6230_1_2_3_4_5_6.jpg"
+                  class="gal-short img-cover-hidden"
+                  alt="community lounge with booths and couches"
+                />
+              </div>
+              <div class="row mt-4">
+                <img
+                  src="/img/IMG_1574_75_76_77_78_79_80-2.jpg"
+                  class="gal-long img-cover-hidden"
+                  alt="a perfectly designed apartment kitchen"
+                />
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6 col-xl-3">
+              <div class="row mt-4">
+                <img
+                  src="img/IMG_5754_55_56_57_58_59_60.jpg"
+                  class="gal-long img-cover-hidden"
+                  alt="outside corner of the archetecual beauty of the property"
+                />
+              </div>
+              <div class="row mt-4">
+                <img
+                  src="/img/IMG_1413_4_5_6_7_8_9-2.jpg"
+                  class="gal-short img-cover-hidden"
+                  alt="a cozy well furnished apartment bedroom"
+                />
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6 col-xl-3">
+              <div class="row mt-4">
+                <img
+                  src="/img/IMG_5467_68_69_70_71_72_73.jpg"
+                  class="gal-short img-cover-hidden"
+                  alt="outside corner property with a Newks eatery on the ground floor with a covered patio"
+                />
+              </div>
+              <div class="row mt-4">
+                <img
+                  src="/img/IMG_1301_2_3_4_5_6_7-2.jpg"
+                  class="gal-long img-cover-hidden"
+                  alt="community breakfast bar and kitchen"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 mt-5 px-0">
+              <a href="#" class="btn rounded-0 mt-3 text-white pt-3 pb-0">
+                <p class="sect-five-btn">
+                  EXPLORE GALLERY
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="row sect-six text-white">
+        <div class="col-12">
+          <h3 class="fw-light text-center pt-2">
+            See it for yourself. Schedule a Tour.
+            <a href="#" class="btn text-white rounded-circle px-1 py-1"
+              ><img
+                src="/icons/chevron-right.svg"
+                alt="Arrow link to schedule a tour"
+            /></a>
+          </h3>
+        </div>
+      </section>
+    </main>
+    <footer class="container-fluid bg-black text-white px-5 pt-4">
+      <div class="container">
+        <div class="row justify-content-between py-5">
+          <div class="col-lg-2 col-sm-12 mx-4 mb-4">
+            <div class="row">
+              <img
+                class="chancellor-icon ps-0 pb-3"
+                src="/img/Logo-Chancellor.png"
+                alt="Chancellor Proporties logo"
+              />
+              <p class="m-0 p-0">Chancellor Proporties</p>
+              <br />
+              <p class="m-0 p-0">395 Hollister Avenue</p>
+              <br />
+              <p class="m-0 p-0">Goleta, CA 93117</p>
+              <br />
+              <p class="m-0 p-0">(805) 696-5400</p>
+              <br />
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-6">
+            <div class="row">
+              <a href="#" class="btn text-start text-white">
+                <p class="m-0 p-0">Home</p>
+              </a>
+              <br />
+              <a href="#" class="btn text-start text-white">
+                <p class="m-0 p-0">Amenities</p>
+              </a>
+              <br />
+              <a href="#" class="btn text-start text-white">
+                <p class="m-0 p-0">Virtual Tours</p>
+              </a>
+              <br />
+              <a href="#" class="btn text-start text-white">
+                <p class="m-0 p-0">Floorplans</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-6">
+            <div class="row">
+              <a href="#" class="btn text-start text-white">
+                <p class="m-0 p-0">Photo Gallery</p>
+              </a>
+              <br />
+              <a href="#" class="btn text-start text-white">
+                <p class="m-0 p-0">Maps & Directions</p>
+              </a>
+              <br />
+              <a href="#" class="btn text-start text-white">
+                <p class="m-0 p-0">eBrochure</p>
+              </a>
+              <br />
+              <a href="#" class="btn text-start text-white">
+                <p class="m-0 p-0">Schedule a Tour</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-6">
+            <div class="row">
+              <a href="#" class="btn text-start text-white">
+                <p class="m-0 p-0">Contact Us</p>
+              </a>
+              <br />
+              <a href="#" class="btn text-start text-white">
+                <p class="m-0 p-0">Interactive Maps</p>
+              </a>
+              <br />
+              <a href="#" class="btn text-start text-white">
+                <p class="m-0 p-0">Reviews</p>
+              </a>
+              <br />
+              <a href="#" class="btn text-start text-white">
+                <p class="m-0 p-0">Privacy Policy</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-6">
+            <div class="row">
+              <a href="#" class="btn text-start text-white">
+                <p class="m-0 p-0">Resident Login</p>
+              </a>
+              <br />
+              <a href="#" class="btn text-start text-white">
+                <p class="m-0 p-0">Applicant Login</p>
+              </a>
+              <br />
+              <a href="#" class="btn text-start text-white">
+                <p class="m-0 p-0">Terms and Conditions</p>
+              </a>
+              <br />
+              <div class="d-flex justify-content-start">
+                <a href="#" class="btn px-0">
+                  <img
+                    class="social-media-icons"
+                    src="/icons/twitter-icon.png"
+                    alt="Twitter icon"
+                  />
+                </a>
+                <a href="#" class="btn px-0">
+                  <img
+                    class="social-media-icons"
+                    style="height: 75%;"
+                    src="/icons/facebook-icon.png"
+                    alt="Facebook icon"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-10 modal-footer justify-content-start">
+            <p class="fs-6 text-white-50 pt-4">
+              &copy; 2021 Chancellor Properties, LLC. All Rights Reserved.|
+              Website Design by RENTCaf&eacute; (&copy; 2021 Yardi Systems, Inc.
+              All Rights Reserved.)
+            </p>
+          </div>
+          <div class="col-2 modal-footer pt-4">
+            <img
+              src="/icons/ADA-icon.png"
+              style="width: fit-content;"
+              alt="accessible icon"
+            />
+            <img
+              src="/icons/equalhousing-icon.png"
+              style="width: fit-content;"
+              alt="equal housing stylicon"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
